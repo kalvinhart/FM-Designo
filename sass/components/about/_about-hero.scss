@@ -1,0 +1,37 @@
+.about-hero {
+
+    & > .container {
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: 32rem max-content;
+    }
+
+    &__image {
+        width: 100%;
+        background-image: url("../../../assets/about/mobile/image-about-hero.jpg");
+    }
+
+    &__content {
+        padding: 8rem 2rem;
+
+        background-color: $clr-primary;
+        background-image: url("../../../assets/about/mobile/bg-pattern-hero-about-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: left 100% top 25%;
+
+        color: $clr-primary-white;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+
+        text-transform: unset;
+        font-weight: 400;
+    }
+
+    &__text {
+        line-height: 2.5rem;
+    }
+}

@@ -1,0 +1,41 @@
+// Break points
+$bp-small: 60rem;
+
+// Colors
+$clr-primary: hsl(11, 73%, 66%);
+$clr-primary-rgb: rgba(232, 128, 105, 0.5);
+$clr-primary-black: hsl(270, 3%, 11%);
+$clr-primary-white: hsl(0, 0%, 100%);
+
+$clr-secondary: hsl(11, 100%, 80%);
+$clr-secondary-dark-grey: hsl(264, 5%, 20%);
+$clr-secondary-light-grey: hsl(210, 17%, 95%);
+
+$clr-light-bg: hsl(14, 76%, 97%);
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --border-radius: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 111.1rem;
+    margin: 0 auto;
+}
+
+.big-margin-bottom {
+    margin-bottom: 25rem;
+}

@@ -1,0 +1,67 @@
+.location-main {
+
+    & > .container {
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: 32rem max-content 32rem max-content 32rem max-content;
+    }
+
+    &__map {
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &--canada {
+            background-image: url("../../../assets/locations/tablet/image-map-canada.png");
+        }
+
+        &--australia {
+            background-image: url("../../../assets/locations/tablet/image-map-australia.png");
+        }
+
+        &--uk {
+            background-image: url("../../../assets/locations/tablet/image-map-uk.png");
+        }
+    }
+
+    &__content {
+        padding: 8rem 2rem;
+
+        background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+
+        &--canada {}
+
+        &--australia {}
+
+        &--uk {}
+    }
+
+    &__content:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+
+    &__title {
+        @include title-reset;
+        color: $clr-primary;
+    }
+
+    &__text {
+
+        & >:first-child {
+            margin-bottom: 2rem;
+        }
+
+        & p span {
+            font-weight: 600;
+        }
+        &--address {}
+
+        &--contact {}
+    }
+}

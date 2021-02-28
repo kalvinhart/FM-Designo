@@ -1,0 +1,42 @@
+.cta {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    height: 38rem;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $clr-primary;
+    background-image: url("../../assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-size: 300%;
+    background-position: center;
+    border-radius: var(--border-radius);
+
+    color: $clr-primary-white;
+
+    
+
+    &__content {
+        margin-bottom: 4rem;
+
+        & > * {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__title {
+        font-size: 3.2rem;
+        text-transform: none;
+        line-height: 3.6rem;
+        letter-spacing: unset;
+    }
+
+    &__text {}
+}

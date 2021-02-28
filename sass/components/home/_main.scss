@@ -1,0 +1,11 @@
+.main {
+    padding: 10rem 0;
+
+    background-color: $clr-primary-white;
+
+    & > .container {
+        display: grid;
+        grid-template-rows: repeat(3, max-content);
+        grid-gap: 2rem;
+    }
+}

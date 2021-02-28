@@ -1,0 +1,36 @@
+.about-main {
+    padding: 0 0 6rem;
+
+    & > .container {
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: 32rem max-content;
+
+        background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+    }
+
+    &__content {
+        padding: 6rem 2rem;
+
+        text-align: center;
+        color: $clr-secondary-dark-grey;
+    }
+
+    &__title {
+        @include title-reset;
+        color: $clr-primary;
+    }
+
+    &__text:first-of-type {
+        margin-bottom: 2rem;
+    }
+}
+
+.world-class > .container .about-main__image {
+    background-image: url("../../../assets/about/mobile/image-world-class-talent.jpg");
+}
+
+.real-deal > .container .about-main__image {
+    background-image: url("../../../assets/about/mobile/image-real-deal.jpg");
+}

@@ -1,0 +1,104 @@
+.product-main {
+    padding: 6rem 0;
+
+    & > .container {
+        display: grid;
+        grid-row-gap: 4rem;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-rows: 32rem minmax(18rem, max-content);
+
+        border-radius: var(--border-radius);
+
+        overflow: hidden;
+    }
+
+    &__image {
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__content {
+        padding: 2rem;
+
+        background-color: $clr-light-bg;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+
+        color: $clr-primary;
+    }
+
+    &__text {}
+}
+
+// App design
+.airfilter {
+    background-image: url("../../assets/app-design/desktop/image-airfilter.jpg");
+}
+
+.eyecam {
+    background-image: url("../../assets/app-design/desktop/image-eyecam.jpg");
+}
+
+.faceit {
+    background-image: url("../../assets/app-design/desktop/image-faceit.jpg");
+}
+
+.todo {
+    background-image: url("../../assets/app-design/desktop/image-todo.jpg");
+}
+
+.loopstudios {
+    background-image: url("../../assets/app-design/desktop/image-loopstudios.jpg");
+}
+
+// Graphic design
+
+.tim-brown {
+    background-image: url("../../assets/graphic-design/desktop/image-change.jpg");
+}
+
+.boxed-water {
+    background-image: url("../../assets/graphic-design/desktop/image-boxed-water.jpg");
+}
+
+.science {
+    background-image: url("../../assets/graphic-design/desktop/image-science.jpg");
+}
+
+// Web design
+
+.express {
+    background-image: url("../../assets/web-design/desktop/image-express.jpg");
+}
+
+.transfer {
+    background-image: url("../../assets/web-design/desktop/image-transfer.jpg");
+}
+
+.photon {
+    background-image: url("../../assets/web-design/desktop/image-photon.jpg");
+}
+
+.builder {
+    background-image: url("../../assets/web-design/desktop/image-builder.jpg");
+}
+
+.blogr {
+    background-image: url("../../assets/web-design/desktop/image-blogr.jpg");
+}
+
+.camp {
+    background-image: url("../../assets/web-design/desktop/image-camp.jpg");
+}

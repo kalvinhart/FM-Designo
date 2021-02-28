@@ -1,0 +1,83 @@
+.header {
+    position: relative;
+    height: 9.6rem;
+    
+    display: flex;
+    align-items: center;
+
+    background-color: $clr-primary-white;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & a {
+            display: flex;
+        }
+    }
+    &__logo {
+        width: 20rem;
+    }
+
+    &__nav {
+        display: none;
+        position: fixed;
+        top: 9.6rem;
+        left: 0;
+        width: 100%;
+
+        padding: 4rem 2rem;
+
+        background-color: $clr-primary-black;
+
+        &-underlay {
+            display: none;
+            position: fixed;
+            top: 9.6rem;
+            left: 0;
+
+            height: calc(100vh - 9.6rem);
+            width: 100vh;
+
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        &-item:not(:last-child) {
+            margin-bottom: 3rem;
+        }
+
+        &-link {
+            font-size: 2.4rem;
+        }
+    }
+
+    &__burger {
+        height: 2rem;
+        width: 2.4rem;
+
+        border: none;
+
+        background-color: $clr-primary-white;
+        background-image: url("../../assets/shared/mobile/icon-hamburger.svg");
+        background-position: center;      
+    }
+
+    &.active {
+        position: fixed;
+        z-index: 100;
+        width: 100vw;
+    }
+
+    &.active > .container &__burger {
+        background-image: url("../../assets/shared/mobile/icon-close.svg");
+    }
+
+    &.active > .container .header__nav {
+        display: block;
+    }
+
+    &.active > .container .header__nav-underlay {
+        display: block;
+    }
+}
