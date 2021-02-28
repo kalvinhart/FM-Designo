@@ -21,16 +21,31 @@
 
     &__image {
         position: absolute;
+        z-index: 3;
 
         &-wrapper {
             position: relative;
             width: 20rem;
             height: 20rem;
             margin: 0 auto;
+
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: 2;
+                display: block;
+                height: 202px;
+                width: 202px;
+                top: 0;
+                left: 0;
+                background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+            }
+
         }
 
         &-bg {
             position: absolute;
+            z-index: 1;
         }
     }
 

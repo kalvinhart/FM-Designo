@@ -441,6 +441,7 @@ h3 {
 
 .details__image {
   position: absolute;
+  z-index: 3;
 }
 
 .details__image-wrapper {
@@ -450,8 +451,22 @@ h3 {
   margin: 0 auto;
 }
 
+.details__image-wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  display: block;
+  height: 202px;
+  width: 202px;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+
 .details__image-bg {
   position: absolute;
+  z-index: 1;
 }
 
 .details__title, .details__text {
@@ -514,6 +529,10 @@ h3 {
 .footer__address p:first-of-type,
 .footer__contact-details p:first-of-type {
   font-weight: 500;
+}
+
+.footer__socials-link {
+  text-decoration: none;
 }
 
 .footer__socials-link:not(:last-child) {
@@ -734,7 +753,9 @@ h3 {
 
 .location-main__content {
   padding: 8rem 2rem;
-  background-image: url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-color: #fdf4f2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
