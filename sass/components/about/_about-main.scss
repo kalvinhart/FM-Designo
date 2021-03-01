@@ -7,19 +7,57 @@
         display: grid;
         grid-template-rows: 32rem max-content;
 
+        background-color: $clr-light-bg;
         background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+
+        @media only screen and (min-width: $bp-small) {
+            width: 90%;
+
+            border-radius: var(--border-radius);
+
+            overflow: hidden;
+        }
+
+        @media only screen and (min-width: $bp-large) {
+            grid-template-rows: 64rem;
+            grid-template-columns: 40% 60%;
+        }
+    }
+
+    &__image {
+        background-size: cover;
     }
 
     &__content {
         padding: 6rem 2rem;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
         text-align: center;
         color: $clr-secondary-dark-grey;
+
+        @media only screen and (min-width: $bp-large) {
+            padding: 6rem 6rem;
+            
+            text-align: left;
+            align-items: flex-start;
+        }
     }
 
     &__title {
         @include title-reset;
         color: $clr-primary;
+
+        @media only screen and (min-width: $bp-large) {
+            font-size: 4rem;
+        }
+    }
+
+    &__text {
+        max-width: 45rem;
     }
 
     &__text:first-of-type {
@@ -29,8 +67,40 @@
 
 .world-class > .container .about-main__image {
     background-image: url("../../../assets/about/mobile/image-world-class-talent.jpg");
+
+    @media only screen and (min-width: $bp-small) {
+        background-image: url("../../../assets/about/tablet/image-world-class-talent.jpg");
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        background-image: url("../../../assets/about/desktop/image-world-class-talent.jpg");
+    }
+}
+
+.real-deal > .container {
+
+    @media only screen and (min-width: $bp-large) {
+       grid-template-columns: 60% 40%; 
+    }
 }
 
 .real-deal > .container .about-main__image {
     background-image: url("../../../assets/about/mobile/image-real-deal.jpg");
+
+    @media only screen and (min-width: $bp-small) {
+        background-image: url("../../../assets/about/tablet/image-real-deal.jpg");
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        background-image: url("../../../assets/about/desktop/image-real-deal.jpg");
+        grid-column: 2 / 3;
+    }
+}
+
+.real-deal > .container .about-main__content {
+
+    @media only screen and (min-width: $bp-large) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
 }

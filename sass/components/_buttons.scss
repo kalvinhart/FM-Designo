@@ -12,6 +12,11 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
 
     &:hover {
         background-color: $clr-secondary;

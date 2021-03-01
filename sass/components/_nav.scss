@@ -8,6 +8,12 @@
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 2px;
-        color: $clr-primary-white;
+
+        &:hover {
+
+            @media only screen and (min-width: $bp-small) {
+                text-decoration: underline;
+            }
+        }
     }
 }

@@ -1,4 +1,6 @@
 .contact {
+    margin-bottom: 4rem;
+
     & > .container {
         padding: 6rem 0;
 
@@ -6,6 +8,27 @@
         background-color: $clr-primary;
         background-image: url("../../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
         background-size: 200%;
+
+        @media only screen and (min-width: $bp-small) {
+            width: 90%;
+
+            background-image: url("../../../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+            background-size: 100%;
+            background-position: top -10rem left -15rem;
+            background-repeat: no-repeat;
+            border-radius: var(--border-radius);
+        }
+
+        @media only screen and (min-width: $bp-large) {
+            display: grid;
+            grid-template-columns: 60% 40%;
+
+            height: 48rem;
+            padding: 0;
+
+            background-size: 60%;
+            background-position: left top -12rem;
+        }
     }
 
     &__content {
@@ -13,13 +36,31 @@
 
         color: $clr-primary-white;
         text-align: center;
+
+        @media only screen and (min-width: $bp-small) {
+            padding: 4rem 6rem;
+
+            text-align: left;
+        }
+
+        @media only screen and (min-width: $bp-large) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     &__title {
         @include title-reset;
+
+        @media only screen and (min-width: $bp-small) {
+            font-size: 4.8rem;
+        }
     }
 
-    &__text {}
+    &__text {
+        max-width: 45rem;
+    }
 
     &__form {
         position: relative;
@@ -39,24 +80,46 @@
 
         &-container {
             width: 100%;
+
+            @media only screen and (min-width: $bp-large) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
         }
 
         &-label {
             position: absolute;
-            left: -99rem;
+            left: -999rem;
         }
 
         &-input {
             width: 100%;
             padding: 1rem 2rem;
 
-            background-color: $clr-primary;
+            background-color: transparent;
 
             border: none;
             border-bottom: 1px solid $clr-primary-white;
 
             font-family: inherit;
             color: $clr-primary-white;
+
+            &-wrapper {
+                position: relative;
+
+                width: 100%;
+
+                & .fas {
+                    display: none;
+                    position: absolute;
+                    right: 1rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    color: $clr-primary-white;
+                }
+            }
         }
 
         &-input::-webkit-input-placeholder {
@@ -68,5 +131,41 @@
             height: 12rem;
             resize: none;
         }
+
+        & button {
+
+            @media only screen and (min-width: $bp-small) {
+                align-self: flex-end;
+            }
+        }
+
+        @media only screen and (min-width: $bp-small) {
+            padding: 2rem 6rem;
+        }
     }
+
+    &__error {
+        display: none;
+        position: absolute;
+        right: 4rem;
+        top: 50%;
+        transform: translateY(-50%);
+
+        color: $clr-primary-white;
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+
+    @media only screen and (min-width: $bp-small) {
+        padding-top: 2rem; 
+    }
+}
+
+.error ~ .fas,
+.error ~ .contact__error {
+    display: block;
+}
+
+.valid {
+    border-bottom: 2px solid $clr-primary-white;
 }

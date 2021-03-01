@@ -5,6 +5,7 @@
     transform: translate(-50%, -50%);
 
     width: 90%;
+    max-width: 111.1rem;
     height: 38rem;
     padding: 3rem;
 
@@ -29,6 +30,11 @@
         & > * {
             margin-bottom: 2rem;
         }
+
+        @media only screen and (min-width: $bp-med) {
+            margin-bottom: 0;
+            text-align: left;
+        }
     }
 
     &__title {
@@ -36,7 +42,34 @@
         text-transform: none;
         line-height: 3.6rem;
         letter-spacing: unset;
+
+        @media only screen and (min-width: $bp-small) {
+            display: inline-block;
+            max-width: 36rem;
+        }
+
+        @media only screen and (min-width: $bp-med) {
+            font-size: 4rem;
+        }
     }
 
-    &__text {}
+    &__text {
+
+        @media only screen and (min-width: $bp-small) {
+            max-width: 45rem;
+            margin-bottom: 0;
+        }
+    }
+
+    @media only screen and (min-width: $bp-small) {
+        background-size: 100%;
+    }
+
+    @media only screen and (min-width: $bp-med) {
+        padding: 4rem 6rem;
+        height: 29rem;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

@@ -1,7 +1,17 @@
 .details {
     padding: 6rem 0;
 
-    & > .container {}
+    & > .container {
+
+        @media only screen and (min-width: $bp-med) {
+            width: 80%;
+            max-width: 100rem;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;   
+        }
+    }
 
     &__item {
         margin-bottom: 6rem;
@@ -49,9 +59,45 @@
         }
     }
 
+    &__content {
+        @media only screen and (min-width: $bp-small) {
+            max-width: 44rem;
+        }
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+
     &__title,
     &__text {
         text-align: center;
+
+        @media only screen and (min-width: $bp-small) {
+            text-align: left;
+        }
+
+        @media only screen and (min-width: $bp-med) {
+            text-align: center;
+        }
+    }
+}
+
+.details-home {
+
+    @media only screen and (min-width: $bp-small) {
+        flex-direction: row;
+    }
+
+    @media only screen and (min-width: $bp-med) {
+        max-width: 25rem;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        max-width: 30rem;
     }
 }
 

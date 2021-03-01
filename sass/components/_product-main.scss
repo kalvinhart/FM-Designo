@@ -1,9 +1,30 @@
 .product-main {
     padding: 6rem 0;
+    margin-bottom: 4rem;
 
     & > .container {
         display: grid;
         grid-row-gap: 4rem;
+
+        @media only screen and (min-width: $bp-large) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, max-content);
+            grid-gap: 2rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover > .product-main__item .product-main__content {
+            background-color: $clr-primary;
+            color: $clr-primary-white;
+        }
+
+        &:hover > .product-main__item .product-main__content .product-main__title {
+            color: $clr-primary-white;
+        }
     }
 
     &__item {
@@ -13,6 +34,18 @@
         border-radius: var(--border-radius);
 
         overflow: hidden;
+
+        @media only screen and (min-width: $bp-small) {
+            grid-template-rows: 31rem;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media only screen and (min-width: $bp-large) {
+            grid-template-rows: 32rem minmax(18rem, max-content);
+            grid-template-columns: unset;
+
+            max-width: 35rem;
+        }
     }
 
     &__image {
@@ -31,6 +64,8 @@
         align-items: center;
 
         text-align: center;
+
+        transition: all .2s ease;
     }
 
     &__title {
@@ -38,8 +73,6 @@
 
         color: $clr-primary;
     }
-
-    &__text {}
 }
 
 // App design

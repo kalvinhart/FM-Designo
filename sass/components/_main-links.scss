@@ -2,6 +2,12 @@
     display: grid;
     grid-template-rows: repeat(2, max-content);
     grid-row-gap: 2rem;
+
+    @media only screen and (min-width: $bp-large) {
+        grid-template-rows: 30rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
 }
 
 .main-links-box {
@@ -33,13 +39,29 @@
     height: 25rem;
 
     border-radius: var(--border-radius);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     overflow: hidden;
+
+    @media only screen and (min-width: $bp-small) {
+        height: 20rem;
+    }
+
+    @media only screen and (min-width: $bp-large) {
+        height: 30rem;
+    }
 }
 
 .main-links-box-title {
     font-size: 2.8rem;
     letter-spacing: 1.4px;
+    
+    @media only screen and (min-width: $bp-small) {
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
 }
 
 .main-links-box-text {
@@ -50,15 +72,62 @@
     margin-left: 1rem;
 }
 
+.home-main-links {
+    @media only screen and (min-width: $bp-med) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    & > &-box &-box-content {
+
+    }
+}
+
+.home-web {
+    @media only screen and (min-width: $bp-med) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+    }
+
+    & > .main-links-box-content {
+        @media only screen and (min-width: $bp-med) {
+            height: 100%;
+        }
+    }
+}
 
 .web {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../../assets/home/mobile/image-web-design.jpg");
+
+    @media only screen and (min-width: $bp-small) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../../assets/home/tablet/image-web-design.jpg");
+    }
+
+    @media only screen and (min-width: $bp-med) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../../assets/home/desktop/image-web-design-large.jpg");       
+    }
 }
 
 .app {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../../assets/home/mobile/image-app-design.jpg");
+
+    @media only screen and (min-width: $bp-small) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../../assets/home/tablet/image-app-design.jpg");
+    }
+
+    @media only screen and (min-width: $bp-med) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../../assets/home/desktop/image-app-design.jpg");  
+    }
 }
 
 .graphic {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../../assets/home/mobile/image-graphic-design.jpg");
+
+    @media only screen and (min-width: $bp-small) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../../assets/home/tablet/image-graphic-design.jpg");
+    }
+
+    @media only screen and (min-width: $bp-med) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../../assets/home/desktop/image-graphic-design.jpg");       
+    }
 }

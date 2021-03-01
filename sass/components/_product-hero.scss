@@ -2,7 +2,7 @@
 
     & > .container {
         width: 100%;
-        padding: 8rem 2rem;
+        padding: 6rem 2rem;
 
         display: flex;
         flex-direction: column;
@@ -15,23 +15,42 @@
 
         color: $clr-primary-white;
         text-align: center;
+
+        @media only screen and (min-width: $bp-small) {
+            width: 90%;
+
+            border-radius: var(--border-radius);
+        }
     }
 
     &__title {
         @include title-reset;
+
+        @media only screen and (min-width: $bp-small) {
+            font-size: 4.8rem;
+        }
     }
 
-    &__text {}
+    &__text {
+
+        @media only screen and (min-width: $bp-small) {
+            max-width: 35rem;
+        }
+    }
+
+    @media only screen and (min-width: $bp-small) {
+        padding-top: 2rem; 
+    }
 }
 
-.app > .container {
+.hero-app > .container {
     background-image: url("../../assets/app-design/desktop/bg-pattern-intro-app.svg");
 }
 
-.graphic > .container {
+.hero-graphic > .container {
     background-image: url("../../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg");
 }
 
-.web > .container {
+.hero-web > .container {
     background-image: url("../../assets/web-design/desktop/bg-pattern-intro-web.svg");
 }

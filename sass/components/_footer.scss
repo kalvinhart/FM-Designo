@@ -6,6 +6,25 @@
 
     text-align: center;
 
+    & > .container {
+        @media only screen and (min-width: $bp-small) {
+            display: grid;
+            grid-template-areas:    "logo nav nav"
+                                    "line line line"
+                                    "contact contact socials";
+        }
+
+        & a {
+
+            @media only screen and (min-width: $bp-small) {
+                display: inline-block;
+
+                grid-area: logo;
+                justify-self: start;
+            }
+        }
+    }
+
     &__logo {
         width: 20rem;
         margin-bottom: 2rem;
@@ -17,30 +36,62 @@
         background-color: $clr-primary-white;
         opacity: 0.1;
         margin-bottom: 4rem;
+
+        @media only screen and (min-width: $bp-small) {
+            grid-area: line;
+            margin-bottom: 4rem;
+        }
     }
 
     &__nav {
 
+        &-list {
+            margin-bottom: 4rem;
+
+            @media only screen and (min-width: $bp-small) {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
         &-item:not(:last-child) {
             margin-bottom: 2rem;
+
+            @media only screen and (min-width: $bp-small) {
+                margin: 0 2rem 0 0;
+            }
         }
 
-        &-item {
-            margin-bottom: 4rem;
+        &-link {
+            color: $clr-primary-white;
         }
 
-        &-link {}
-
+        @media only screen and (min-width: $bp-small) {
+            grid-area: nav;
+        }
     }
 
     &__contact {
         color: $clr-primary-white;
         opacity: 0.5;
         margin-bottom: 4rem;
+
+        @media only screen and (min-width: $bp-small) {
+            grid-area: contact;
+
+            margin-right: 4rem;
+            margin-bottom: 0;
+
+            display: flex;
+        }
     }
 
     &__address {
         margin-bottom: 4rem;
+
+        @media only screen and (min-width: $bp-small) {
+            margin: 0 4rem 0 0;
+        }
     }
 
     &__address p:first-of-type,
@@ -52,11 +103,27 @@
         
         &-link {
             text-decoration: none;
+
+            transition: all .2s ease;
+
+            &:hover svg {
+                filter: brightness(120%);
+            }
         }
         
         &-link:not(:last-child) {
             margin-right: 1rem;
         }
+
+        @media only screen and (min-width: $bp-small) {
+            grid-area: socials;
+            justify-self: end;
+            align-self: end;
+        }
+    }
+
+    @media only screen and (min-width: $bp-small) {
+        text-align: left;
     }
 }
 

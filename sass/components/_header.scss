@@ -31,8 +31,9 @@
 
         background-color: $clr-primary-black;
 
+
         &-underlay {
-            display: none;
+            visibility: hidden;
             position: fixed;
             top: 9.6rem;
             left: 0;
@@ -41,14 +42,45 @@
             width: 100vh;
 
             background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+
+            transition: all .2s ease;
+        }
+
+        &-list {
+
+            @media only screen and (min-width: $bp-small) {
+                display: flex;
+            }
         }
 
         &-item:not(:last-child) {
             margin-bottom: 3rem;
+
+            @media only screen and (min-width: $bp-small) {
+                margin: 0 2rem 0 0;
+            }
         }
 
         &-link {
             font-size: 2.4rem;
+            color: $clr-primary-white;
+
+            @media only screen and (min-width: $bp-small) {
+                color: $clr-secondary-dark-grey;
+                font-size: 1.4rem;
+            }
+        }
+
+        @media only screen and (min-width: $bp-small) {
+            display: block;
+            position: static;
+            top: unset;
+            left: unset;
+            width: auto;
+            padding: unset;
+
+            background-color: unset;
         }
     }
 
@@ -60,7 +92,11 @@
 
         background-color: $clr-primary-white;
         background-image: url("../../assets/shared/mobile/icon-hamburger.svg");
-        background-position: center;      
+        background-position: center;   
+        
+        @media only screen and (min-width: $bp-small) {
+            display: none;
+        }
     }
 
     &.active {
@@ -78,6 +114,11 @@
     }
 
     &.active > .container .header__nav-underlay {
-        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    @media only screen and (min-width: $bp-med) {
+        padding-top: 4rem;
     }
 }

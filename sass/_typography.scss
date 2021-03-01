@@ -4,10 +4,17 @@ body {
     font-family: Jost, sans-serif;
     font-size: 1.5rem;
     color: $clr-secondary-dark-grey;
+
+    @media only screen and (min-width: $bp-small) {
+        font-size: 1.6rem;
+    }
 }
 
 h1, h2, h3 {
     font-weight: 500;
+}
+
+h2, h3 {
     text-transform: uppercase;
 }
 
