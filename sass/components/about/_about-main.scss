@@ -8,7 +8,7 @@
         grid-template-rows: 32rem max-content;
 
         background-color: $clr-light-bg;
-        background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+        background-image: url("../../assets/shared/desktop/bg-pattern-three-circles.svg");
 
         @media only screen and (min-width: $bp-small) {
             width: 90%;
@@ -66,14 +66,14 @@
 }
 
 .world-class > .container .about-main__image {
-    background-image: url("../../../assets/about/mobile/image-world-class-talent.jpg");
+    background-image: url("../../assets/about/mobile/image-world-class-talent.jpg");
 
     @media only screen and (min-width: $bp-small) {
-        background-image: url("../../../assets/about/tablet/image-world-class-talent.jpg");
+        background-image: url("../../assets/about/tablet/image-world-class-talent.jpg");
     }
 
     @media only screen and (min-width: $bp-large) {
-        background-image: url("../../../assets/about/desktop/image-world-class-talent.jpg");
+        background-image: url("../../assets/about/desktop/image-world-class-talent.jpg");
     }
 }
 
@@ -85,14 +85,14 @@
 }
 
 .real-deal > .container .about-main__image {
-    background-image: url("../../../assets/about/mobile/image-real-deal.jpg");
+    background-image: url("../../assets/about/mobile/image-real-deal.jpg");
 
     @media only screen and (min-width: $bp-small) {
-        background-image: url("../../../assets/about/tablet/image-real-deal.jpg");
+        background-image: url("../../assets/about/tablet/image-real-deal.jpg");
     }
 
     @media only screen and (min-width: $bp-large) {
-        background-image: url("../../../assets/about/desktop/image-real-deal.jpg");
+        background-image: url("../../assets/about/desktop/image-real-deal.jpg");
         grid-column: 2 / 3;
     }
 }

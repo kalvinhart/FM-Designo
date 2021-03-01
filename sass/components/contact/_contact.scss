@@ -6,13 +6,13 @@
 
         width: 100%;
         background-color: $clr-primary;
-        background-image: url("../../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+        background-image: url("../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
         background-size: 200%;
 
         @media only screen and (min-width: $bp-small) {
             width: 90%;
 
-            background-image: url("../../../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+            background-image: url("../../assets/contact/desktop/bg-pattern-hero-desktop.svg");
             background-size: 100%;
             background-position: top -10rem left -15rem;
             background-repeat: no-repeat;

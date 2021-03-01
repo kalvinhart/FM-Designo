@@ -25,12 +25,12 @@
         background-position: center;
 
         &--canada {
-            background-image: url("../../../assets/locations/tablet/image-map-canada.png");
+            background-image: url("../../assets/locations/tablet/image-map-canada.png");
 
             @media only screen and (min-width: $bp-large) {
                 grid-column: 3 / 4;
 
-                background-image: url("../../../assets/locations/desktop/image-map-canada.png");
+                background-image: url("../../assets/locations/desktop/image-map-canada.png");
             }
 
             & ~ .location-main__content {
@@ -44,12 +44,12 @@
         }
 
         &--australia {
-            background-image: url("../../../assets/locations/tablet/image-map-australia.png");
+            background-image: url("../../assets/locations/tablet/image-map-australia.png");
 
             @media only screen and (min-width: $bp-large) {
                 grid-column: 1 / 2;
 
-                background-image: url("../../../assets/locations/desktop/image-map-australia.png");
+                background-image: url("../../assets/locations/desktop/image-map-australia.png");
             }
 
             & ~ .location-main__content {
@@ -62,12 +62,12 @@
         }
 
         &--uk {
-            background-image: url("../../../assets/locations/tablet/image-map-uk.png");
+            background-image: url("../../assets/locations/tablet/image-map-uk.png");
 
             @media only screen and (min-width: $bp-large) {
                 grid-column: 3 / 4;
 
-                background-image: url("../../../assets/locations/desktop/image-map-united-kingdom.png");
+                background-image: url("../../assets/locations/desktop/image-map-united-kingdom.png");
             }
 
             & ~ .location-main__content {
@@ -88,7 +88,7 @@
         padding: 8rem 2rem;
 
         background-color: $clr-light-bg;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -103,7 +103,7 @@
         }
 
         @media only screen and (min-width: $bp-large) {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../../assets/shared/desktop/bg-pattern-two-circles.svg");
+            background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../assets/shared/desktop/bg-pattern-two-circles.svg");
         }
     }
 
