@@ -1,5 +1,10 @@
 const form = document.querySelector(".contact__form");
 const inputs = document.querySelectorAll(".contact__form-input");
+const emailInput = document.querySelector(".contact__form-input[inputmode=email]");
+
+function emailIsValid(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
 
 inputs.forEach(input => {
     input.addEventListener("blur", (e) => {
@@ -17,7 +22,7 @@ form.addEventListener("submit", (e) => {
 
     inputs.forEach(input => {
         input.classList.remove("error");
-    })
+    });
 
     let errors = [];
     inputs.forEach((input, i) => {
@@ -25,6 +30,8 @@ form.addEventListener("submit", (e) => {
             errors.push(i);
         }
     });
+
+    if (!emailIsValid(emailInput.value)) errors.push(1);
 
     if (errors.length > 0) {
         errors.forEach(index => {
