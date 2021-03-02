@@ -1,5 +1,25 @@
 # Frontend Mentor - Designo Agency Website Challenge
 
+## What is this?
+
+This was my first attempt at recreating a multipage website using a Figma design. This challenge was taken from [Frontend Mentor](https://www.frontendmentor.io) and I chose this particular project as I felt it would give me a chance to practice replicating a real-life design using HTML and CSS (SASS). I used BEM notation to help keep my SASS more organised.
+
+There is a small amount of basic JavaScript used for the mobile navigation functionality, as well as some basic form validation as per the specs of this challenge outlined below.
+
+## What have I learnt from this project?
+
+- I should pay more attention to reusuable classes. Towards the end of creating this project, I encountered a bug in the UI, and to fix it I had to make the same small change in several areas of my code. I realised at this point that I had not been successful in identifying enough of the reusable classes prior to starting the project.
+- I should use more SASS mixins. I am yet to use all of the features of SASS, and I used a small mixin in this project. I can see the benefits to using these and will look to incorporate these more in future work.
+- I should learn more about positioning of background images. The biggest struggle for me on this project was to match the design perfectly with the position of the background images in the hero sections. I will spend some time on this subject to ensure I have a better understanding of it for future work.
+- Use relative paths for hyperlinks. This is a simple one, but something I had neglected to do. Needless to say, my navigation was broken on my first push.
+
+## Final thoughts...
+
+I really enjoyed this project, from the modern, beautiful design of the website, to the more complicated structure of my SASS files to try and keep things organised. I will be doing another couple of similar challenges in the near future where I can address some of the comments I made above and continue gaining experience with SASS.
+
+And now for the official specifications...
+
+
 ![Design preview for the Designo Agency Website Challenge coding challenge](./preview.jpg)
 
 ## Welcome! 👋
