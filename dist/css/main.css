@@ -1042,7 +1042,7 @@ h3 {
       grid-template-rows: repeat(2, -webkit-max-content);
       grid-template-rows: repeat(2, max-content);
   background-color: #e88069;
-  background-image: url("./assets/home/desktop/bg-pattern-hero-home.svg");
+  background-image: url("../../assets/home/desktop/bg-pattern-hero-home.svg");
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: left top 8rem;
