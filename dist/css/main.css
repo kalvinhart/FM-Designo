@@ -1042,7 +1042,7 @@ h3 {
       grid-template-rows: repeat(2, -webkit-max-content);
       grid-template-rows: repeat(2, max-content);
   background-color: #e88069;
-  background-image: url("../../../assets/home/desktop/bg-pattern-hero-home.svg");
+  background-image: url("./assets/home/desktop/bg-pattern-hero-home.svg");
   background-size: 200%;
   background-repeat: no-repeat;
   background-position: left top 8rem;
@@ -1181,14 +1181,14 @@ h3 {
 
 .about-hero__image {
   width: 100%;
-  background-image: url("../../../assets/about/mobile/image-about-hero.jpg");
+  background-image: url("../../assets/about/mobile/image-about-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 @media only screen and (min-width: 700px) {
   .about-hero__image {
-    background-image: url("../../../assets/about/tablet/image-about-hero.jpg");
+    background-image: url("../../assets/about/tablet/image-about-hero.jpg");
   }
 }
 
@@ -1197,7 +1197,7 @@ h3 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
-    background-image: url("../../../assets/about/desktop/image-about-hero.jpg");
+    background-image: url("../../assets/about/desktop/image-about-hero.jpg");
   }
 }
 
@@ -1214,7 +1214,7 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #e88069;
-  background-image: url("../../../assets/about/mobile/bg-pattern-hero-about-mobile.svg");
+  background-image: url("../../assets/about/mobile/bg-pattern-hero-about-mobile.svg");
   background-repeat: no-repeat;
   background-position: left 100% top 25%;
   color: white;
@@ -1223,7 +1223,7 @@ h3 {
 
 @media only screen and (min-width: 700px) {
   .about-hero__content {
-    background-image: url("../../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-image: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
   }
 }
 
@@ -1275,7 +1275,7 @@ h3 {
       grid-template-rows: 32rem -webkit-max-content;
       grid-template-rows: 32rem max-content;
   background-color: #fdf4f2;
-  background-image: url("../../../assets/shared/desktop/bg-pattern-three-circles.svg");
+  background-image: url("../../assets/shared/desktop/bg-pattern-three-circles.svg");
 }
 
 @media only screen and (min-width: 700px) {
@@ -1350,18 +1350,18 @@ h3 {
 }
 
 .world-class > .container .about-main__image {
-  background-image: url("../../../assets/about/mobile/image-world-class-talent.jpg");
+  background-image: url("../../assets/about/mobile/image-world-class-talent.jpg");
 }
 
 @media only screen and (min-width: 700px) {
   .world-class > .container .about-main__image {
-    background-image: url("../../../assets/about/tablet/image-world-class-talent.jpg");
+    background-image: url("../../assets/about/tablet/image-world-class-talent.jpg");
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .world-class > .container .about-main__image {
-    background-image: url("../../../assets/about/desktop/image-world-class-talent.jpg");
+    background-image: url("../../assets/about/desktop/image-world-class-talent.jpg");
   }
 }
 
@@ -1373,18 +1373,18 @@ h3 {
 }
 
 .real-deal > .container .about-main__image {
-  background-image: url("../../../assets/about/mobile/image-real-deal.jpg");
+  background-image: url("../../assets/about/mobile/image-real-deal.jpg");
 }
 
 @media only screen and (min-width: 700px) {
   .real-deal > .container .about-main__image {
-    background-image: url("../../../assets/about/tablet/image-real-deal.jpg");
+    background-image: url("../../assets/about/tablet/image-real-deal.jpg");
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .real-deal > .container .about-main__image {
-    background-image: url("../../../assets/about/desktop/image-real-deal.jpg");
+    background-image: url("../../assets/about/desktop/image-real-deal.jpg");
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
@@ -1436,7 +1436,7 @@ h3 {
 }
 
 .location-main__map--canada {
-  background-image: url("../../../assets/locations/tablet/image-map-canada.png");
+  background-image: url("../../assets/locations/tablet/image-map-canada.png");
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1444,7 +1444,7 @@ h3 {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3 / 4;
-    background-image: url("../../../assets/locations/desktop/image-map-canada.png");
+    background-image: url("../../assets/locations/desktop/image-map-canada.png");
   }
 }
 
@@ -1460,7 +1460,7 @@ h3 {
 }
 
 .location-main__map--australia {
-  background-image: url("../../../assets/locations/tablet/image-map-australia.png");
+  background-image: url("../../assets/locations/tablet/image-map-australia.png");
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1468,7 +1468,7 @@ h3 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1 / 2;
-    background-image: url("../../../assets/locations/desktop/image-map-australia.png");
+    background-image: url("../../assets/locations/desktop/image-map-australia.png");
   }
 }
 
@@ -1484,7 +1484,7 @@ h3 {
 }
 
 .location-main__map--uk {
-  background-image: url("../../../assets/locations/tablet/image-map-uk.png");
+  background-image: url("../../assets/locations/tablet/image-map-uk.png");
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1492,7 +1492,7 @@ h3 {
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3 / 4;
-    background-image: url("../../../assets/locations/desktop/image-map-united-kingdom.png");
+    background-image: url("../../assets/locations/desktop/image-map-united-kingdom.png");
   }
 }
 
@@ -1516,8 +1516,8 @@ h3 {
 .location-main__content {
   padding: 8rem 2rem;
   background-color: #fdf4f2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../../assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -1533,8 +1533,8 @@ h3 {
 
 @media only screen and (min-width: 1200px) {
   .location-main__content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../../assets/shared/desktop/bg-pattern-two-circles.svg");
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../../assets/shared/desktop/bg-pattern-two-circles.svg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url("../../assets/shared/desktop/bg-pattern-two-circles.svg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../assets/shared/desktop/bg-pattern-two-circles.svg");
   }
 }
 
@@ -1597,14 +1597,14 @@ h3 {
   padding: 6rem 0;
   width: 100%;
   background-color: #e88069;
-  background-image: url("../../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
+  background-image: url("../../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg");
   background-size: 200%;
 }
 
 @media only screen and (min-width: 700px) {
   .contact > .container {
     width: 90%;
-    background-image: url("../../../assets/contact/desktop/bg-pattern-hero-desktop.svg");
+    background-image: url("../../assets/contact/desktop/bg-pattern-hero-desktop.svg");
     background-size: 100%;
     background-position: top -10rem left -15rem;
     background-repeat: no-repeat;
